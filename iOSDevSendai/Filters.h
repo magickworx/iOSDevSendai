@@ -1,7 +1,7 @@
 /*****************************************************************************
  *
- * FILE:	RootViewController.h
- * DESCRIPTION:	iOSDevSendai: Root view controller
+ * FILE:	Filters.h
+ * DESCRIPTION:	iOSDevSendai: Available CoreImage filter set class
  * DATE:	Thu, Dec  8 2011
  * UPDATED:	Fri, Dec  9 2011
  * AUTHOR:	Kouichi ABE (WALL) / 阿部康一
@@ -36,21 +36,35 @@
  *   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  *   THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: RootViewController.h,v 1.3 2011/10/01 17:32:57 kouichi Exp $
+ * $Id: Filters.h,v 1.2 2011/11/08 16:15:35 kouichi Exp $
  *
  *****************************************************************************/
 
-#import <QuartzCore/QuartzCore.h>
-#import <UIKit/UIKit.h>
-#import "Filters.h"
+#import <CoreImage/CoreImage.h>
 
-@class	ImageView;
+@protocol FiltersDelegate;
 
-@interface RootViewController : UIViewController <FiltersDelegate>
+@interface Filters : NSObject <UIActionSheetDelegate>
 {
 @private
-  ImageView *	_imageView;
-  Filters *	_filters;
+  id <FiltersDelegate>	_delegate;
+
+  NSString *	_title;
+  CIFilter *	_filter;
+  NSString *	_inputKey;
 }
 
+@property (nonatomic,assign) id <FiltersDelegate>	delegate;
+
+-(void)showFiltersInView:(UIView *)view;
+
+-(NSString *)title;
+-(CIFilter *)filter;
+-(NSString *)inputKey;
+
+@end
+
+@protocol FiltersDelegate <NSObject>
+@optional
+-(void)filtersDidSelectFilter:(Filters *)filters;
 @end

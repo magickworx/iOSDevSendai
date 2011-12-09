@@ -43,9 +43,9 @@
 #import "RootViewController.h"
 #import "ImageView.h"
 
-
 @interface RootViewController ()
 @property (nonatomic,retain) ImageView *	imageView;
+@property (nonatomic,retain) Filters *		filters;
 @end
 
 @interface RootViewController (Private)
@@ -55,6 +55,7 @@
 @implementation RootViewController
 
 @synthesize	imageView	= _imageView;
+@synthesize	filters		= _filters;
 
 -(id)init
 {
@@ -67,7 +68,8 @@
 
 -(void)dealloc
 {
-  [_imageView release];
+  self.imageView = nil;
+  self.filters	 = nil;
   [super dealloc];
 }
 
@@ -109,11 +111,22 @@
 		  action:@selector(filterAction:)];
   self.navigationItem.rightBarButtonItem = filterButton;
   [filterButton release];
+
+  Filters *	filters;
+  filters = [[Filters alloc] init];
+  [filters setDelegate:self];
+  self.filters = filters;
+  [filters release];
+
+  // Set default filter
+  self.title = [filters title];
+  [self.imageView setFilter:[filters filter] withInputKey:[filters inputKey]];
 }
 
 -(void)viewDidUnload
 {
   self.imageView = nil;
+  self.filters	 = nil;
   [super viewDidUnload];
 }
 
@@ -122,6 +135,16 @@
 #pragma mark UIBarButtonItem action
 -(void)filterAction:(id)sender
 {
+  [self.filters showFiltersInView:self.view.window];
+}
+
+/*****************************************************************************/
+
+#pragma mark FiltersDelegate
+-(void)filtersDidSelectFilter:(Filters *)filters
+{
+  self.title = [filters title];
+  [self.imageView setFilter:[filters filter] withInputKey:[filters inputKey]];
 }
 
 /*****************************************************************************/
