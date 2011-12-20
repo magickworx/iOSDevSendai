@@ -3,7 +3,7 @@
  * FILE:	Filters.m
  * DESCRIPTION:	iOSDevSendai: Available CoreImage filter set class
  * DATE:	Thu, Dec  8 2011
- * UPDATED:	Fri, Dec  9 2011
+ * UPDATED:	Tue, Dec 20 2011
  * AUTHOR:	Kouichi ABE (WALL) / 阿部康一
  * E-MAIL:	kouichi@MagickWorX.COM
  * URL:		http://www.MagickWorX.COM/
@@ -85,7 +85,7 @@ enum {
   kButtonAdjustSaturation,	// 彩度
   kButtonAdjustHue,		// 色調
   kButtonAdjustGammaAdjust,	// ガンマ
-  kNumberOfAdjustmentTags
+  kNumberOfFilterButtons
 };
 
 
