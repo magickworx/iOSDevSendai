@@ -42,6 +42,7 @@
 
 #import "RootViewController.h"
 #import "ImageView.h"
+#import "AdsBannerView.h"
 
 @interface RootViewController ()
 @property (nonatomic,retain) ImageView *	imageView;
@@ -121,6 +122,12 @@
   // Set default filter
   self.title = [filters title];
   [self.imageView setFilter:[filters filter] withInputKey:[filters inputKey]];
+
+  // Ads
+  AdsBannerView *	banner;
+  banner = [[AdsBannerView alloc] initWithRootViewController:self];
+  [self.view addSubview:banner];
+  [banner release];
 }
 
 -(void)viewDidUnload

@@ -98,7 +98,7 @@ enum {
 		  cancelButtonTitle:nil
 		  destructiveButtonTitle:nil
 		  otherButtonTitles:nil];
-  [actionSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
+  [actionSheet setActionSheetStyle:UIActionSheetStyleDefault];
 
   [actionSheet addButtonWithTitle:NSLocalizedString(@"Brightness", @"")];
   [actionSheet addButtonWithTitle:NSLocalizedString(@"Contrast", @"")];

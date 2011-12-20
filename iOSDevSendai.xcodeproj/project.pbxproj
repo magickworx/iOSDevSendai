@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B336C815149216660096DFD3 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = B336C814149216660096DFD3 /* Filters.m */; };
+		B336C819149270F80096DFD3 /* AdsBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B336C818149270F80096DFD3 /* AdsBannerView.m */; };
+		B336C81B149271070096DFD3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B336C81A149271070096DFD3 /* iAd.framework */; };
+		B344281A1490F95800CF2005 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34428191490F95800CF2005 /* UIKit.framework */; };
+		B344281C1490F95800CF2005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B344281B1490F95800CF2005 /* Foundation.framework */; };
+		B344281E1490F95800CF2005 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B344281D1490F95800CF2005 /* CoreGraphics.framework */; };
+		B34428241490F95800CF2005 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B34428221490F95800CF2005 /* InfoPlist.strings */; };
+		B34428261490F95800CF2005 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34428251490F95800CF2005 /* main.m */; };
+		B344282A1490F95800CF2005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B34428291490F95800CF2005 /* AppDelegate.m */; };
+		B37CF6BA149131A500B8DB9A /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF6B7149131A500B8DB9A /* ImageView.m */; };
+		B37CF6BB149131A500B8DB9A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF6B9149131A500B8DB9A /* RootViewController.m */; };
+		B37CF6BE149131C200B8DB9A /* castle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B37CF6BD149131C200B8DB9A /* castle.jpeg */; };
+		B37CF6C01491322200B8DB9A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37CF6BF1491322200B8DB9A /* CoreImage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B336C813149216660096DFD3 /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filters.h; sourceTree = "<group>"; };
+		B336C814149216660096DFD3 /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filters.m; sourceTree = "<group>"; };
+		B336C817149270F80096DFD3 /* AdsBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsBannerView.h; sourceTree = "<group>"; };
+		B336C818149270F80096DFD3 /* AdsBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsBannerView.m; sourceTree = "<group>"; };
+		B336C81A149271070096DFD3 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		B34428151490F95800CF2005 /* iOSDevSendai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDevSendai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34428191490F95800CF2005 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B344281B1490F95800CF2005 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B344281D1490F95800CF2005 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B34428211490F95800CF2005 /* iOSDevSendai-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSDevSendai-Info.plist"; sourceTree = "<group>"; };
+		B34428231490F95800CF2005 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B34428251490F95800CF2005 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B34428271490F95800CF2005 /* iOSDevSendai-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSDevSendai-Prefix.pch"; sourceTree = "<group>"; };
+		B34428281490F95800CF2005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B34428291490F95800CF2005 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B37CF6B6149131A500B8DB9A /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		B37CF6B7149131A500B8DB9A /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		B37CF6B8149131A500B8DB9A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B37CF6B9149131A500B8DB9A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B37CF6BD149131C200B8DB9A /* castle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = castle.jpeg; sourceTree = "<group>"; };
+		B37CF6BF1491322200B8DB9A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B34428121490F95800CF2005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B336C81B149271070096DFD3 /* iAd.framework in Frameworks */,
+				B37CF6C01491322200B8DB9A /* CoreImage.framework in Frameworks */,
+				B344281A1490F95800CF2005 /* UIKit.framework in Frameworks */,
+				B344281C1490F95800CF2005 /* Foundation.framework in Frameworks */,
+				B344281E1490F95800CF2005 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B344280A1490F95800CF2005 = {
+			isa = PBXGroup;
+			children = (
+				B344281F1490F95800CF2005 /* iOSDevSendai */,
+				B34428181490F95800CF2005 /* Frameworks */,
+				B34428161490F95800CF2005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B34428161490F95800CF2005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B34428151490F95800CF2005 /* iOSDevSendai.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B34428181490F95800CF2005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B336C81A149271070096DFD3 /* iAd.framework */,
+				B37CF6BF1491322200B8DB9A /* CoreImage.framework */,
+				B34428191490F95800CF2005 /* UIKit.framework */,
+				B344281B1490F95800CF2005 /* Foundation.framework */,
+				B344281D1490F95800CF2005 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B344281F1490F95800CF2005 /* iOSDevSendai */ = {
+			isa = PBXGroup;
+			children = (
+				B336C817149270F80096DFD3 /* AdsBannerView.h */,
+				B336C818149270F80096DFD3 /* AdsBannerView.m */,
+				B336C813149216660096DFD3 /* Filters.h */,
+				B336C814149216660096DFD3 /* Filters.m */,
+				B37CF6B6149131A500B8DB9A /* ImageView.h */,
+				B37CF6B7149131A500B8DB9A /* ImageView.m */,
+				B37CF6B8149131A500B8DB9A /* RootViewController.h */,
+				B37CF6B9149131A500B8DB9A /* RootViewController.m */,
+				B34428281490F95800CF2005 /* AppDelegate.h */,
+				B34428291490F95800CF2005 /* AppDelegate.m */,
+				B34428201490F95800CF2005 /* Supporting Files */,
+			);
+			path = iOSDevSendai;
+			sourceTree = "<group>";
+		};
+		B34428201490F95800CF2005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B37CF6BD149131C200B8DB9A /* castle.jpeg */,
+				B34428211490F95800CF2005 /* iOSDevSendai-Info.plist */,
+				B34428221490F95800CF2005 /* InfoPlist.strings */,
+				B34428251490F95800CF2005 /* main.m */,
+				B34428271490F95800CF2005 /* iOSDevSendai-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B34428141490F95800CF2005 /* iOSDevSendai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B344282D1490F95800CF2005 /* Build configuration list for PBXNativeTarget "iOSDevSendai" */;
+			buildPhases = (
+				B34428111490F95800CF2005 /* Sources */,
+				B34428121490F95800CF2005 /* Frameworks */,
+				B34428131490F95800CF2005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDevSendai;
+			productName = iOSDevSendai;
+			productReference = B34428151490F95800CF2005 /* iOSDevSendai.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B344280C1490F95800CF2005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "マジックワークス";
+			};
+			buildConfigurationList = B344280F1490F95800CF2005 /* Build configuration list for PBXProject "iOSDevSendai" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B344280A1490F95800CF2005;
+			productRefGroup = B34428161490F95800CF2005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B34428141490F95800CF2005 /* iOSDevSendai */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B34428131490F95800CF2005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34428241490F95800CF2005 /* InfoPlist.strings in Resources */,
+				B37CF6BE149131C200B8DB9A /* castle.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B34428111490F95800CF2005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34428261490F95800CF2005 /* main.m in Sources */,
+				B344282A1490F95800CF2005 /* AppDelegate.m in Sources */,
+				B37CF6BA149131A500B8DB9A /* ImageView.m in Sources */,
+				B37CF6BB149131A500B8DB9A /* RootViewController.m in Sources */,
+				B336C815149216660096DFD3 /* Filters.m in Sources */,
+				B336C819149270F80096DFD3 /* AdsBannerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B34428221490F95800CF2005 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B34428231490F95800CF2005 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B344282B1490F95800CF2005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B344282C1490F95800CF2005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B344282E1490F95800CF2005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSDevSendai/iOSDevSendai-Prefix.pch";
+				INFOPLIST_FILE = "iOSDevSendai/iOSDevSendai-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B344282F1490F95800CF2005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSDevSendai/iOSDevSendai-Prefix.pch";
+				INFOPLIST_FILE = "iOSDevSendai/iOSDevSendai-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B344280F1490F95800CF2005 /* Build configuration list for PBXProject "iOSDevSendai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B344282B1490F95800CF2005 /* Debug */,
+				B344282C1490F95800CF2005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B344282D1490F95800CF2005 /* Build configuration list for PBXNativeTarget "iOSDevSendai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B344282E1490F95800CF2005 /* Debug */,
+				B344282F1490F95800CF2005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B344280C1490F95800CF2005 /* Project object */;
+}
