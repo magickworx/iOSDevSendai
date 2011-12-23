@@ -85,6 +85,8 @@ enum {
   kButtonAdjustSaturation,	// 彩度
   kButtonAdjustHue,		// 色調
   kButtonAdjustGammaAdjust,	// ガンマ
+  kButtonGeometryStraighten,
+  kButtonEffectSepiaTone,
   kNumberOfFilterButtons
 };
 
@@ -105,6 +107,8 @@ enum {
   [actionSheet addButtonWithTitle:NSLocalizedString(@"Saturation", @"")];
   [actionSheet addButtonWithTitle:NSLocalizedString(@"Hue", @"")];
   [actionSheet addButtonWithTitle:NSLocalizedString(@"Gamma", @"")];
+  [actionSheet addButtonWithTitle:NSLocalizedString(@"Straighten", @"")];
+  [actionSheet addButtonWithTitle:NSLocalizedString(@"SepiaTone", @"")];
 
   [actionSheet addButtonWithTitle:NSLocalizedString(@"Cancel", @"")];
   [actionSheet setCancelButtonIndex:([actionSheet numberOfButtons] - 1)];
@@ -140,6 +144,14 @@ enum {
     case kButtonAdjustGammaAdjust:
       self.filter   = [CIFilter filterWithName:@"CIGammaAdjust"];
       self.inputKey = @"inputPower";
+      break;
+    case kButtonGeometryStraighten:
+      self.filter   = [CIFilter filterWithName:@"CIStraightenFilter"];
+      self.inputKey = @"inputAngle";
+      break;
+    case kButtonEffectSepiaTone:
+      self.filter   = [CIFilter filterWithName:@"CISepiaTone"];
+      self.inputKey = @"inputIntensity";
       break;
   }
   self.title = [actionSheet buttonTitleAtIndex:buttonIndex];
