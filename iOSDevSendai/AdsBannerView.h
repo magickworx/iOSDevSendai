@@ -3,14 +3,14 @@
  * FILE:	AdsBannerView.h
  * DESCRIPTION:	Ads management view class
  * DATE:	Fri, Dec  9 2011
- * UPDATED:	Fri, Dec  9 2011
+ * UPDATED:	Sat, Feb 25 2012
  * AUTHOR:	Kouichi ABE (WALL) / 阿部康一
  * E-MAIL:	kouichi@MagickWorX.COM
  * URL:		http://www.MagickWorX.COM/
- * COPYRIGHT:	(c) 2011 阿部康一／Kouichi ABE (WALL), All rights reserved.
+ * COPYRIGHT:	(c) 2011-2012 阿部康一／Kouichi ABE (WALL), All rights reserved.
  * LICENSE:
  *
- *  Copyright (c) 2011 Kouichi ABE (WALL) <kouichi@MagickWorX.COM>,
+ *  Copyright (c) 2011-2012 Kouichi ABE (WALL) <kouichi@MagickWorX.COM>,
  *  All rights reserved.
  *
  *  Redistribution and use in source and binary forms, with or without
@@ -41,12 +41,27 @@
  *****************************************************************************/
 
 #import <iAd/iAd.h>
+#if	ENABLE_AD_MOB_BANNER
+#import "GADBannerView.h"
+#endif	// ENABLE_AD_MOB_BANNER
 
-@interface AdsBannerView : UIView <ADBannerViewDelegate>
+extern NSString * const	kAdsBannerViewDidFailToReceiveAdNotification;
+
+@interface AdsBannerView : UIView
+	<
+#if	ENABLE_AD_MOB_BANNER
+	GADBannerViewDelegate,
+#endif	// ENABLE_AD_MOB_BANNER
+	ADBannerViewDelegate
+	>
 {
 @private
   UIViewController *	_rootViewController;
+
   ADBannerView *	_iAdBanner;
+#if	ENABLE_AD_MOB_BANNER
+  GADBannerView *	_adMobBanner;
+#endif	// ENABLE_AD_MOB_BANNER
 }
 
 -(id)initWithRootViewController:(UIViewController *)controller;
